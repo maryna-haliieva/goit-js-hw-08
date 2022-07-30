@@ -28,10 +28,11 @@ function onSubmit(ev) {
   localStorage.removeItem(LOCAL_KEY);
 }
 function setFormValues() {
-  const sevedInfo = localStorage.getItem(LOCAL_KEY);
+  const savedInfo = localStorage.getItem(LOCAL_KEY);
 
-  if (sevedInfo) {
-    const data = JSON.parse(sevedInfo);
+  if (savedInfo) {
+    const data = JSON.parse(savedInfo);
+
     if (data.email) {
       form.elements.email.value = data.email;
     }
