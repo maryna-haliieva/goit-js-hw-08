@@ -36,7 +36,7 @@ function setFormValues() {
     if (data.email) {
       form.elements.email.value = data.email;
     }
-    if (data.email) {
+    if (data.message) {
       form.elements.message.value = data.message;
     }
   }
